@@ -6,7 +6,8 @@ from store.db.mongo import db_client
 
 # from store.schemas.product import ProductIn, ProductUpdate
 # from store.usecases.product import product_usecase
-# from tests.factories import product_data, products_data
+from tests.factories import product_data, products_data
+
 # from httpx import AsyncClient
 
 
