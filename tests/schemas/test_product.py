@@ -1,5 +1,5 @@
-from pydantic import ValidationError
-import pytest
+# from pydantic import ValidationError
+# import pytest
 from store.schemas.product import ProductIn
 from tests.factories import product_data
 

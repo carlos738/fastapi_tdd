@@ -1,5 +1,6 @@
 from decimal import Decimal
-from typing import Annotated, Optional
+# from typing import Annotated, Optional
+
 from bson import Decimal128
 from pydantic import AfterValidator, Field
 from store.schemas.base import BaseSchemasMixin, OutSchema
@@ -12,7 +13,13 @@ class ProductBase(BaseSchemasMixin):
     status: bool = Field(..., description="Product status")
 
 
-class ProductInn(ProductBase, BaseSchemasMixin): ...
+class ProductIn(ProductBase, BaseSchemasMixin):
+    pass
 
 
-class ProductOut(ProductIn, OutSchema): ...
+class ProductOut(ProductIn, OutSchema):
+    pass
+
+
+def convert_decimal_128(v):
+    return Decimal128(str(v))
