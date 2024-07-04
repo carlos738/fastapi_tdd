@@ -1,9 +1,9 @@
-# from typing import List
-# from uuid import UUID
+from typing import List
+from uuid import UUID
 
-# import pytest
-# from store.core.exceptions import NotFoundException
-# from store.schemas.product import ProductOut, ProductUpdateOut
+import pytest
+from store.core.exceptions import NotFoundException
+from store.schemas.product import ProductOut, ProductUpdateOut
 from store.usecases.product import product_usecase
 
 
