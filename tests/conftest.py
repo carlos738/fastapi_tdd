@@ -47,7 +47,7 @@ def products_url() -> str:
 
 @pytest.fixture
 def product_id() -> UUID:
-    return UUID("fce6cc37-10b9-4a8e-a8b2-977df327001a")
+    return UUID("f41778f43-aba8-4613-9270-9c8385922888")
 
 
 @pytest.fixture
@@ -72,5 +72,4 @@ def products_in():
 
 @pytest.fixture
 async def products_inserted(products_in):
-    return [await product_usecase.create(body=product_in) for product_in 
-            in products_in]
+    return [await product_usecase.create(body=product_in) for product_in in products_in]
